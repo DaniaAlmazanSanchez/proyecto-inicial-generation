@@ -1,0 +1,99 @@
+h2,h3,h4,h5,h6 {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    color: rgb(27, 230, 245);
+
+}
+h1{
+    color: white;
+    font-family: 'Lobster', cursive;
+   
+}
+.copy{
+    color: rgb(210, 255, 121);
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+:root{
+    scroll-behavior: smooth;
+
+}
+body{
+    background: linear-gradient(to right,pink,violet,blue);
+     color: blueviolet;
+}
+.hola{
+    color: rgb(70, 125, 228);
+}
+/*CONTENEDOR*/
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin:auto;
+    padding: 60px 0;
+
+}
+header{
+    height: 100vh;
+    background-image: linear-gradient(to top, rgba(243, 160, 163, 0.267) 0%, rgba(250, 208, 196, 0.452) 99%, rgba(250, 208, 196, 0.486) 100%), url(../img/morado.jpg);
+background-repeat: no-repeat ;
+background-size: cover;
+background-attachment: fixed;
+background-position: center;
+
+}
+.inicio{
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/*menu*/
+.menu-icono{
+    position: fixed;
+    top: 20px;
+    left:30px;
+    background:rgb(111, 182, 230);
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 12px;
+
+}
+/*formulario*/
+#formulario{
+    justify-content: center;
+    height: 100vw;
+}
+#blanco{
+    color:white;
+    text-align: center;
+}
+
+#color {
+   color: blue;
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+}
+button{
+    border-radius: 20px;
+    border: 1px solid slateblue;
+    padding: 10px 30px;
+    color: blue;
+
+}
+button:hover{
+background-color: rgb(117, 180, 243);
+}
+#caja{
+    background-color: rgb(188, 188, 240);
+    text-align: center;
+    width: 300px;/*ancho del recuadro*/
+    height: 400px;
+    margin:0 auto;/*centrar caja*/
+
+}
