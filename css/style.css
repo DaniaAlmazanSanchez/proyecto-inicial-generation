@@ -4,7 +4,7 @@ h2,h3,h4,h5,h6 {
     color: white;
 
 }
-h1{
+h1 {
     color: white;
     font-family: 'Lobster', cursive;
    
@@ -22,6 +22,7 @@ h1{
 body{
     background: linear-gradient(to right,pink,violet,blue);
      color: blueviolet;
+    
 }
 .hola{
     color: rgb(70, 125, 228);
@@ -38,8 +39,8 @@ body{
 header{
     height: 100vh;
     background-image: linear-gradient(to top, rgba(243, 160, 163, 0.267) 0%, rgba(250, 208, 196, 0.452) 99%, rgba(250, 208, 196, 0.486) 100%), url(../img/morado.jpg);
-background-repeat: no-repeat ;
-background-size: cover;
+    background-repeat: no-repeat ;
+    background-size: cover;
 background-attachment: fixed;
 background-position: center;
 }
@@ -51,19 +52,6 @@ background-position: center;
     align-items: center;
  flex-direction: column;
 
-    }
-.yo{
- 
-   
-        display: flex;
-        width: 400px;
-        height: 100px ; 
-        background-color: rgb(221, 39, 238);
-padding: 0;       
-justify-content: center;
-align-items: center;  
-color: white;
-flex-wrap: wrap;
     }
 
 /*menu*/
@@ -116,9 +104,21 @@ flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    font-size: 40px;
+   
+
+    
+   
      
 }
+.imgicono:hover{
+    background: #f1ecec;
+    color: lightcoral;
+    border-radius: 1px solid violet;
+    border-radius: 50%;
+    color: indigo;
+    font-size: 20px;
+}
+
 /*contacto*/
 .contenedor-contacto{
     display: flex;
@@ -127,26 +127,48 @@ flex-wrap: wrap;
     flex-wrap: wrap;
 
 }
+
 .cont-expert img{
-    width: 40%;
+    width: 80%;
 }
-.frace{
-  width: 45%;
+/*loader-descarga*/
+.descarga{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 10px;
+    
 }
 
-.contenedor-galeria{
-    display: flex; 
-    justify-content: space-evenly;
-    flex-wrap: wrap;  
-}
-.img-galeria{
-width: 20%;
+    .frace2{
+    display: flex;
+    width: 500px;
+    height: 11px;
+    justify-content: center;
+    text-align: center;
+   
+   }
+.verde{
+    font-size: 20px;
+    color: rgb(66, 240, 66);
 
-display: block;
-margin-bottom: 15px;
-box-shadow: 0 0 6px  rgb(245, 113, 113,0.5);
 }
-/*formulario*/
+/*css puro*/
+.letras{
+    color:transparent;
+    margin: auto;
+  background-position: center;
+   background-size: cover;
+  
+   -webkit-text-stroke: 2px white;
+ box-sizing: border-box;
+ font-family: 'Coiny', cursive;
+}
+/*carrusel*/
+
+
+/*formulario
 #formulario{
    
   display: flex; 
@@ -183,8 +205,43 @@ background-color: rgb(117, 180, 243);
 #caja{
     background-color: rgb(188, 188, 240);
     text-align: center;
-    width: 45%;/*ancho del recuadro*/
+    width: 45%;/*ancho del recuadro
     height: 280px;
-    margin:0 auto;/*centrar caja*/
+    margin:0 auto;/*centrar caja
     
 }
+*/
+/*api del clima con openWeatherMap*/
+.clima-container{
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0;
+width: 100vw;
+height: 100vh;
+background: maroon;
+}
+.card{
+    border-radius: 30px;
+    background-color: lightskyblue;
+    padding: 2em;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+
+}
+
+.weather , .card  {
+   
+    padding: 0;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ flex-direction: column;
+ width: 220px;
+ height: 200px;
+color: lightseagreen;
+
+}
+
