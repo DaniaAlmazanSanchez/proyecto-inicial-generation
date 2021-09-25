@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="css/style.css">
   <title>Dania Almazan Sanchez</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,28 +23,30 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
-    <script src="js/clima.js"></script>
-<!--carrucel-->
- 
+  <script src="js/formulario.js"></script>
+  <!--clima-->
+
 
 </head>
 
 <body>
   <header class="header" id="inicio">
-    <img src="img/menu.svg" alt="" class="menu-icono">
+    <img src="img/menu.svg" alt="" class="menuicono">
 
-    <nav class="menu-navegacion">
-      <a href="#Inicio">Inicio</a>
+    <nav class="menunavegacion">
+      <a href="#inicio">Inicio</a>
       <a href="#sobremi">sobre mi</a>
       <a href="#Portafolio">Portafolio</a>
-      <a href="#contacto">Contactame</a>
+      <a href="#contacto">Contacto</a>
+      <a href="#contactame">Contactame</a>
+      <a href="#clima">clima</a>
     </nav>
 
     <div class=" contenedor head">
       <h1>Hola!!</h1>
       <h2>soy Dania Almazan Sanchez-Front End developer.</h2>
-     
-      <p class="verde"> La innovación es mi pasion .
+
+      <p class="verde"> La innovación es mi pasión.
       </p>
 
     </div>
@@ -53,52 +56,49 @@
       <div class="contenedor-contacto">
         <img src="img/imagen.jpg" alt="" style="display:block;width:20%;margin:auto;">
       </div>
-     <!--loader-desacarga-->
-      <br><div class="descarga">
-       <button class="btn btn-outline-light d-block mx-autotn btn-lg " >
-       <div>
-        <span class="spinner-grow spinner-grow-sm "></span>
-        
-        <a href="pdf/Hola.pdf" target="_blank" download >
-    
-          Descargar Archivo
-          </a>
+      <!--loader-desacarga-->
+      <br>
+      <div class="descarga">
+        <button class="btn btn-outline-light d-block mx-autotn btn-lg ">
+          <div>
+            <span class="spinner-grow spinner-grow-sm "></span>
+
+            <a href="pdf/Hola.pdf" target="_blank" download>
+
+              Descargar Archivo
+            </a>
           </div>
-       </button>
-     </div>
-<!-- social-->
+        </button>
+      </div>
+      <!-- social-->
     </section>
-    <section class="social">
-      <div class="social-icono"></div>
+    <section class="social"" >
+      <div class=" social-icono">
+      </div>
       <a href="" class="social-icon"></a>
-      <a href="https://www.facebook.com/danny.almazan.1"  target="_blank" title="facebook">
+      <a href="https://www.facebook.com/danny.almazan.1" target="_blank" title="facebook">
         <img class="imgicono" src="img/bxl-facebook-circle.svg" alt="facebook ">
-      <!----
-      <i class='bx bxl-facebook-circle'></i>
-      <i class='bx bxl-github'></i>
-      -->
       </a>
       </div>
     </section>
-   <br> <h2>Sobre mi</h2>
-    <div container>
+    <br>
+    <h2 class="sobremi">Sobre mi</h2>
+    <div class="container">
 
-      <div class="alert alert-danger" role="alert" >
+      <div class="alert alert-primary" role="alert">
         <p> Soy recien egresada de Ingenieria en Sistemas Computacionales, actualmente me estoy
-          desarrollando como Front End developer, donde converge mi pasion por el diseño y el desarrollo.Me
-          encantaria conocerte, asi que no dudes en ponerte en contacto
+          desarrollando como Front End developer, donde converge mi pasion por el diseño y el desarrollo. Me
+          encantaria conocerte, asi que no dudes en ponerte en contacto.
         </p>
       </div>
-
     </div>
-
 
     <br>
     <hr>
     <!--carrusel-->
 
-    <h2 >Portafolio</h2>
-    <div class="container">
+    <h2>Portafolio</h2>
+    <div class="container" id="Portafolio">
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -120,93 +120,111 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-    
-</div>
 
-    <!----------</section>------------------------->
+    </div>
+    <!---------formulario------------------------->
 
     <br>
     <hr>
-    <section class="contenedor" id="contacto">
-      <div class="frace2">
-        <h2 class="letras">JUNTOS ALCANZAMOS TUS SUEÑOS</H2>
-
-      </div>
-    </section>
-    <section>
-      <br>
-      <div class="container">
-        <div class="row  mt-5">
-          <div class="col-1 ">
-            <div class="cont-expert">
-
+    <div class="container-fluid">
+      <div class="row">
+        <div class="contenedor" id="contactame">
+          <div class="frace2">
+            <div class="col-sm-12 ">
+              <h2 class="letras">JUNTOS ALCANZAMOS TUS SUEÑOS</h2>
             </div>
-          </div>
-          <div class="col-7 ">
-            <div class="cont-expert">
-
-
-              <img src="img/frace-ima.svg" alt="">
-            </div>
-          </div>
-
-          <!---------------->
-
-          <div class="col-4">
-            <form>
-              <div class="form-group text-center">
-                <label for="exampleInputName1 text">Nombre</label>
-                <input type="name" class="form-control" id="exampleInputname1" aria-describedby="emailHelp">
-                <small id="nameHelp" class="form-text text-muted"></small>
-              </div>
-              <div class="form-group text-center">
-                <label for="exampleInputEmail1">coreo electrónico</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                <small id="emailHelp" class="form-text text-muted"></small>
-              </div>
-              <div class="form-group text-center ">
-                <label for="exampleFormControlTextarea1">Mensaje</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-              </div>
-              <button type="submit " class="btn btn-outline-light d-block mx-auto ">enviar</button>
-            </form>
           </div>
         </div>
       </div>
-      <!------------------------->
+    </div>
     <br>
     <br>
-     <div class="card">
-       <div><i class="search">
-      <input type="text" class="search-bar">
-      <button><i class='bx bxs-search-alt-2' ></i></button>  
 
-      <!---------------->
-      <br>
-      <br>
-      </div>
-      <div class="weather">
-        <div class="ima>
-          <img src="img/clima.svg" alt="">
+    <section class="row ">
+      <div class="col-md-7  mr-3">
+        <div class="container">
+          <div class="row mb-3 mt-3">
+            <div class="a" style="width: 80%">
+              <img src="img/frace-ima.svg" class="card-img" alt="...">
+
+            </div>
+          </div>
         </div>
-        <h2 class="city">weather in </h2>
-        <div class="temp">51°C</div>
-        <img src= "" alt="" class="icon"/>
-        <div class="descrption">cloud</div>
-        <div class="humidity">humedad:60%</div>
-        <div class="wind">wind speed:6.2 km h</div>
+      </div>
+      </div>
+
+      <div class="col-md-4" id="formulario">
+        <div class="row">
+          <div class="col col-sm-6 col-md-12">
+            <div class="card">
+
+              <form id="form1">
+                <h1 class="text-center">Escríbeme</h1>
+                <div class="form-group text-center">
+                  <label for="" class="sr-only">Nombre</label>
+                  <input id="name" type="text " class="form-control" placeholder="Nombre y Apellidos*"
+                    autofocusid="validationCustom01" value="" required>
+                  <div class="valid-feedback">
+                    listo!
+                  </div>
+                </div>
+                <div class="form-group text-center">
+                  <label for="" class="sr-only">coreo electrónico</label>
+                  <input id="email" type=" text " class="form-control" placeholder="correo electronico*"
+                    autofocusautofocusid="validationCustom01" value="" required>
+                  <div class="valid-feedback">
+                    listo!
+                  </div>
+                </div>
+
+                <div class="form-group text-center ">
+                  <label for="" class="sr-only">Mensaje</label>
+                  <textarea class="form-control" id="mensaje" type=" text " class="form-control" placeholder="Mensaje"
+                    autofocus rows="3"></textarea>
+                </div>
+
+                <div>
+                  <button id="submit " class="btn btn-outline-light d-block mx-auto ">enviar</button>
+
+                </div>
+
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </header>
+    <!---------clima---------------->
+
+    <div id="app-container">
+      <div class="input" id="clima">
+        <input type="text" class="inputValue" placeholder="ciudad">
+        <input type="submit" value="consultar" class="boton-clima">
+      </div>
+      <div id="local">
+        <p>clima del dia</p>
 
       </div>
-     </div>
-    </section>
+      <div id="temp">
+        <img id="temp-icono" src="img/clima.svg" alt="">
+
+        <h2 class="name"></h2>
+        <p class="descrip"></p>
+
+        <p class="temp"> </p>
+      </div>
+
+      <!---------------------->
+    </div>
     </div>
   </main>
-  <br> <div class="alert alert-secondary" role="alert">
-      Dania Almazan Sanchez  
+  <br>
+  <div class="alert alert-secondary" role="alert">
+    Dania Almazan Sanchez
   </div>
   <script src="js/menu.js"></script>
-  <script src="js/box.js"></script>
-  
+
   <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -214,9 +232,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
     crossorigin="anonymous"></script>
+  <script src="js/clima.js"></script>
 
-  </body>
-<script type="text/javascript">
+</body>
 
-</script>
 </html>

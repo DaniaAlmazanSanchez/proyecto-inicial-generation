@@ -55,38 +55,39 @@ background-position: center;
     }
 
 /*menu*/
-.menu-icono{
+.menuicono{
     position: fixed;
     top: 20px;
     right: 30px;
-    background:rgb(111, 182, 230);
+    background:rgb(213, 222, 228);
     width: 40px;
     height: 40px;
     cursor: pointer;/*manita sobre el*/
     border-radius: 12px;
-
+     z-index: 10;
 }
 
-.menu-navegacion{
+.menunavegacion{
     position: fixed;
     top: 0;
     right:  0;
     width: 30vw;
     height: 100%;
-    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    background-image: linear-gradient(120deg, #a4b0c4 0%, #c9d8df 100%);
      display: flex;
      flex-direction: column;
      justify-content: space-evenly;
      align-items: center;
      transition:  transform .3s ease-in-out;
     transform: translate(110%);
-     box-shadow: 0 0 6px rgb(61, 23, 201);
-}
-.pread{
+     box-shadow: 0 0 6px rgb(211, 16, 162);
+
+    }
+.spread{
     transform: translate(0);
 }
 
-.menu-navegacion{
+.menunavegacion{
     color: crimson;
     text-decoration: none;
 }
@@ -103,15 +104,21 @@ background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-   
-
-    
-   
+    flex-wrap: wrap; 
      
 }
+/* sobre mi*/
+.alert{
+    text-align: center;
+   
+}
+
+
+
+
+/**************/
 .imgicono:hover{
-    background: #f1ecec;
+    background: #bc63f8;
     color: lightcoral;
     border-radius: 1px solid violet;
     border-radius: 50%;
@@ -165,83 +172,80 @@ background-position: center;
  box-sizing: border-box;
  font-family: 'Coiny', cursive;
 }
-/*carrusel*/
 
 
-/*formulario
-#formulario{
-   
-  display: flex; 
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
+.input[type="text"]{
+    height: 200px;
+    width: 20px;
+    background: lightskyblue;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: bold;
+    font-size: 10px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+.input[type="submit"]{
+    height: 50px;
+    width: 100px;
+    background: lightskyblue;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: bold;
+    font-size: 10px;
+    border: none;
+    border-radius: 2px;
 
 }
-.cont-formulario{
-    width: 80%;
-}
-#blanco{
-    color:white;
-    text-align: center;
-}
 
-#color {
-   color: blue;
-    text-align: center;
-    padding: 5px;
-    margin: 10px;
-}
-button{
-    border-radius: 20px;
-    border: 1px solid slateblue;
-    padding: 10px 30px;
-    color: blue;
-
-}
-button:hover{
-background-color: rgb(117, 180, 243);
-}
-
-#caja{
-    background-color: rgb(188, 188, 240);
-    text-align: center;
-    width: 45%;/*ancho del recuadro
-    height: 280px;
-    margin:0 auto;/*centrar caja
-    
-}
-*/
-/*api del clima con openWeatherMap*/
-.clima-container{
-display: flex;
-justify-content: center;
-align-items: center;
-margin: 0;
-width: 100vw;
-height: 100vh;
-background: maroon;
-}
 .card{
     border-radius: 30px;
-    background-color: lightskyblue;
     padding: 2em;
     width: 100%;
-    max-width: 420px;
+    max-width: 500px;
     margin: 1em;
 
 }
-
 .weather , .card  {
-   
+
     padding: 0;
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
  flex-direction: column;
  width: 220px;
- height: 200px;
-color: lightseagreen;
+ height: 210px;
+color: #ecf8f7;
 
+}
+
+#app-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+#temp{
+    text-align: center;
+    color: mintcream;
+    font-size: 3rem;
+}
+#temp-icon{
+    margin: 5rem;
+    width: 100%;
+    height: auto;
+
+}
+#local{
+    color: mintcream;
+    font-size: 2rem;
+    font-family: 'Playfair Display', serif;
+
+}
+.card-img{
+    width: 100%;
 }
 
