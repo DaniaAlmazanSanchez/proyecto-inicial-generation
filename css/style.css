@@ -4,6 +4,45 @@ h2,h3,h4,h5,h6 {
     color: white;
 
 }
+.stack{
+    background: purple;
+   box-shadow: 0px 0px 30px 0px #b507bb;
+    height:80px;
+    width:300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    
+    
+
+}
+.stack:hover{
+    background-color:#bc63f8;
+   box-shadow: 0px 0px 50px 0px rgb(253, 251, 253);
+    transition:2s;
+    width: 800px;
+    text-align: center;
+  
+}
+
+.avatar{
+/**height: 250px;*/
+border-radius: 50%;
+border: #f6f8f8;
+background-color:transparent;
+box-shadow: 0px 0px 50px 0px #f6f8f8;
+
+}
+/*
+.head img{
+  
+    max-width: 20%;
+    max-height: 20%;
+    bottom: 5px;
+   
+}*/
+
 h1 {
     color: white;
     font-family: 'Lobster', cursive;
@@ -60,10 +99,11 @@ background-position: center;
     top: 20px;
     right: 30px;
     background:rgb(213, 222, 228);
-    width: 40px;
-    height: 40px;
+    width: 100px;
+    height: 100px;
     cursor: pointer;/*manita sobre el*/
-    border-radius: 12px;
+    border-radius:50px;
+    
      z-index: 10;
 }
 
@@ -158,8 +198,7 @@ background-position: center;
    }
 .verde{
     font-size: 20px;
-    color: rgb(66, 240, 66);
-
+    color: aqua;
 }
 /*css puro*/
 .letras{
